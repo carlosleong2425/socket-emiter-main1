@@ -1,11 +1,11 @@
 let socket;
-let canal = "canal 22"; // Elige el nombre que quieras
+let canal = "canal 20"; // Elige el nombre que quieras
 
 function setup() {
   createCanvas(400, 400);
   
   // Conectamos con tu IP y el puerto 3000
-  socket = io('http://206.189.168.40:3000', { transports: ['websocket'] });
+  socket = io('http://104.248.221.181:3000', { transports: ['websocket'] });
 
   // Al conectarnos, nos unimos al canal
   socket.on('connect', () => {
